@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripciones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <h1 id="title"> Inscripciones al Gim</h1>
+        <p id="description">Complete esta encuesta para enviar una solicitud al gimnasio</p>
+        <form id="survey-form" method="post" required>
+            <fieldset>
+                <label id="name-label">Nombre </label><input id="name" type="text" name="name" required placeholder="Ingrese su nombre" />
+                <label id="email-label">Correo </label><input id="email" type="email" name="email" required placeholder="Ingrese su correo" />
+                <label id="number-label">Edad </label><input id="number" type="number" min="1" max="120"
+                    placeholder="Ingrese su edad" />
+            </fieldset>
+            <hr>
+            <fieldset>
+                <label id="dropdown-label">¿Cual es su complexion fisica? <select id="dropdown" required>
+                        <option disabled="" value="">Selecciona una complexion</option>
+                        <option value="1">Delgado</option>
+                        <option value="2">Normal</option>
+                        <option value="3">Musculoso</option>
+                        <option value="4">Obeso</option>
+                    </select>
+                </label>
+                <hr>
+                <p>Fumas?</p>
+                <label id="si">Si <input id="si" type="radio" name="si-no" value="si" class="inline"></label>
+                <label id="no">No <input id="no" type="radio" name="si-no" value="no" class="inline"></label>
+                <hr>
+
+                <p>Padece alguna de estas enfermedades?</p>
+                <label id="cardiacas">Cardiacas <input type="checkbox" value="cardiacas" class="inline"></label>
+                <label id="digestivas">Digestivas <input type="checkbox" value="digestivas" class="inline"></label>
+                <label id="musculares">Musculares <input type="checkbox" value="musculares" class="inline"></label>
+                <label id="otros">Otros <input type="checkbox" value="otros" class="inline"></label>
+                <hr>
+                <label id="commentarios">Comentarios adicionales:
+                    <textarea name="commentarios" id="bio" cols="20" rows="2" placeholder="Me gustaria..."></textarea>
+                </label>
+                <button id="submit" type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+
+</html>
